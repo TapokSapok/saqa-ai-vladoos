@@ -6,17 +6,20 @@ import WrapperLayout from '../../layouts/wrapper-layout';
 import manualPng from '../../assets/manual.png';
 import supportIconPng from '../../assets/support-icon.png';
 import politikaPng from '../../assets/politika.png';
+import { useNavigate } from 'react-router-dom';
 
 export default function HelpPage() {
+	const navigate = useNavigate();
+
 	return (
 		<WrapperLayout>
 			<Title titleText='Рекомендации и помощь' secondText='Поддержка всегда рядом — советы, помощь и ответы на вопросы.' route={ROUTES.photo_home} />
 			<div className='flex flex-col gap-[10px] mt-[25px] w-[95%]'>
 				<div className='flex w-full gap-[10px]'>
-					<HelpButton text='Инструкция' image={manualPng} onClick={() => {}} />
-					<HelpButton text='Тех.Поддержка' image={supportIconPng} onClick={() => {}} />
+					<HelpButton text='Инструкция' image={manualPng} onClick={() => navigate(ROUTES.manual)} />
+					<HelpButton text='Тех.Поддержка' image={supportIconPng} onClick={() => (window.location.href = ROUTES.support_tg)} />
 				</div>
-				<HelpButton text='Политика конфиденциальности' image={politikaPng} onClick={() => {}} />
+				<HelpButton text='Политика конфиденциальности' image={politikaPng} onClick={() => navigate(ROUTES.privacy_policy)} />
 			</div>
 		</WrapperLayout>
 	);

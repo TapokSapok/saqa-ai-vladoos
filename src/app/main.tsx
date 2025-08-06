@@ -14,6 +14,8 @@ import ChangeObjectPage from '../routes/photo/upgrade/change-object';
 import ProfilePage from '../routes/profile';
 import BalancePage from '../routes/balance';
 import HelpPage from '../routes/help';
+import ManualPage from '../routes/help/manual';
+import PrivacyPolicyPage from '../routes/help/privacy-policy';
 
 export const ROUTES = {
 	home: '/',
@@ -22,7 +24,11 @@ export const ROUTES = {
 	photo_create_character: '/photo/create_character',
 	profile: '/profile',
 	balance: '/balance',
+
 	help: '/help',
+	manual: '/help/manual',
+	privacy_policy: '/help/privacy_policy',
+	support_tg: 'https://t.me/saqa_ai',
 
 	photo_personalization: '/photo/personalization',
 	photo_upgrade: '/photo/upgrade',
@@ -81,6 +87,14 @@ const router = createBrowserRouter(
 		{
 			path: ROUTES.help,
 			element: <HelpPage />,
+		},
+		{
+			path: ROUTES.manual,
+			element: <ManualPage />,
+		},
+		{
+			path: ROUTES.privacy_policy,
+			element: <PrivacyPolicyPage />,
 		},
 	],
 	{ future: { v7_fetcherPersist: true, v7_normalizeFormMethod: true, v7_partialHydration: true, v7_relativeSplatPath: true, v7_skipActionErrorRevalidation: true } }
