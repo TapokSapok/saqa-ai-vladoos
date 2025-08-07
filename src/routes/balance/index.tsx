@@ -9,6 +9,7 @@ import logo1Png from '../../assets/logo1.png';
 import bankaLightPng from '../../assets/banka-light.png';
 import bankaPng from '../../assets/banka.png';
 import { useTranslation } from 'react-i18next';
+import { send } from '../../telegram';
 
 export default function BalancePage() {
 	const { theme } = useTheme();
@@ -38,7 +39,7 @@ export default function BalancePage() {
 			/>
 
 			<MyBalance />
-			<GreenButton text={t('balance.buy_button')} onClick={() => {}} />
+			<GreenButton text={t('balance.buy_button')} onClick={() => send('buy_generations')} />
 		</WrapperLayout>
 	);
 }

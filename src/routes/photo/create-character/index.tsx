@@ -11,6 +11,7 @@ import agentPng from '../../../assets/agent.png';
 import imgSvg from '../../../assets/img.svg';
 import imgLightSvg from '../../../assets/img-light.svg';
 import { useTranslation } from 'react-i18next';
+import { send } from '../../../telegram';
 
 export default function CreateCharacterPage() {
 	const { theme } = useTheme();
@@ -27,8 +28,8 @@ export default function CreateCharacterPage() {
 			</div>
 			<Title titleText={t('photo.create_character.title')} secondText={t('photo.create_character.desc')} route={ROUTES.photo_home} />
 			<div className='mt-[30px] flex flex-col gap-[15px]'>
-				<GreenButton text={t('photo.create_character.btns.create')} onClick={() => {}} />
-				<GrayButton text={t('photo.create_character.btns.change')} onClick={() => {}} />
+				<GreenButton text={t('photo.create_character.btns.create')} onClick={() => send('create_agent')} />
+				<GrayButton text={t('photo.create_character.btns.change')} onClick={() => send('change_agent')} />
 			</div>
 		</WrapperLayout>
 	);

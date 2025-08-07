@@ -21,6 +21,8 @@
 
 	--brand-color: #10a37f;
 	--brand-color-muted: #0e9976;
+	--brand-color-dark: rgba(16, 163, 127, 0.15);
+	--brand-color-dark-text: rgb(16, 163, 127);
 
 	--rounded: 12px;
 }
@@ -64,4 +66,8 @@ h2 {
 button {
 	cursor: pointer;
 	user-select: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
 }

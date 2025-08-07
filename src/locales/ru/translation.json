@@ -136,7 +136,9 @@
 
 	"buttons": {
 		"generate": "Генерировать",
-		"select_photo": "Выбрать фото"
+		"select_photo": "Выбрать фото",
+		"photo_selected": "Фото выбрано",
+		"done": "Готово"
 	},
 
 	"switches": {

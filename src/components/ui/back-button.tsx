@@ -9,7 +9,10 @@ export default function BackButton({ route }: { route: string }) {
 	const { theme } = useTheme();
 
 	return (
-		<button className='min-w-[30px] w-[30px] min-h-[30px] h-[30px] bg-[var(--bg-gray-1)] rounded-[7px] flex items-center justify-center' onClick={() => navigate(route)}>
+		<button
+			className='min-w-[30px] w-[30px] min-h-[30px] h-[30px] bg-[var(--bg-gray-1)] rounded-[7px] flex items-center justify-center hover:translate-x-[-3px] hover:bg-[var(--bg-gray-2)]'
+			onClick={() => navigate(route)}
+		>
 			<img src={theme === 'light' ? backSvg : backLightSvg} />
 		</button>
 	);

@@ -25,6 +25,7 @@ import format7Png from '../../../../assets/format/format7.png';
 import format8Png from '../../../../assets/format/format8.png';
 import format9Png from '../../../../assets/format/format9.png';
 import { useTranslation } from 'react-i18next';
+import { send } from '../../../../telegram';
 
 export default function FormatPage() {
 	const { theme } = useTheme();
@@ -38,15 +39,78 @@ export default function FormatPage() {
 			<div className='w-[98%]'>
 				<Title titleText={t('photo.upgrade.format.title')} secondText={t('photo.upgrade.format.desc')} route={ROUTES.photo_upgrade} />
 				<div className='grid grid-cols-2 gap-[10px] pt-[30px] ml-[5px]'>
-					<ImageButton text='1 x 1' image={theme === 'light' ? format1LightPng : format1Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
-					<ImageButton text='2 x 3' image={theme === 'light' ? format2LightPng : format2Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
-					<ImageButton text='3 x 2' image={theme === 'light' ? format3LightPng : format3Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
-					<ImageButton text='3 x 4' image={theme === 'light' ? format4LightPng : format4Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
-					<ImageButton text='4 x 3' image={theme === 'light' ? format5LightPng : format5Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
-					<ImageButton text='4 x 5' image={theme === 'light' ? format6LightPng : format6Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
-					<ImageButton text='5 x 4' image={theme === 'light' ? format7LightPng : format7Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
-					<ImageButton text='9 x 16' image={theme === 'light' ? format8LightPng : format8Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
-					<ImageButton text='16 x 9' image={theme === 'light' ? format9LightPng : format9Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
+					<ImageButton
+						text='1 x 1'
+						image={theme === 'light' ? format1LightPng : format1Png}
+						onClick={() => send('resize_photo', { size: '1:1' })}
+						itemsCenter={true}
+						padding={0}
+						gap={15}
+					/>
+					<ImageButton
+						text='2 x 3'
+						image={theme === 'light' ? format2LightPng : format2Png}
+						onClick={() => send('resize_photo', { size: '2:3' })}
+						itemsCenter={true}
+						padding={0}
+						gap={15}
+					/>
+					<ImageButton
+						text='3 x 2'
+						image={theme === 'light' ? format3LightPng : format3Png}
+						onClick={() => send('resize_photo', { size: '3:2' })}
+						itemsCenter={true}
+						padding={0}
+						gap={15}
+					/>
+					<ImageButton
+						text='3 x 4'
+						image={theme === 'light' ? format4LightPng : format4Png}
+						onClick={() => send('resize_photo', { size: '3:4' })}
+						itemsCenter={true}
+						padding={0}
+						gap={15}
+					/>
+					<ImageButton
+						text='4 x 3'
+						image={theme === 'light' ? format5LightPng : format5Png}
+						onClick={() => send('resize_photo', { size: '4:3' })}
+						itemsCenter={true}
+						padding={0}
+						gap={15}
+					/>
+					<ImageButton
+						text='4 x 5'
+						image={theme === 'light' ? format6LightPng : format6Png}
+						onClick={() => send('resize_photo', { size: '4:5' })}
+						itemsCenter={true}
+						padding={0}
+						gap={15}
+					/>
+					<ImageButton
+						text='5 x 4'
+						image={theme === 'light' ? format7LightPng : format7Png}
+						onClick={() => send('resize_photo', { size: '5:4' })}
+						itemsCenter={true}
+						padding={0}
+						gap={15}
+					/>
+					<ImageButton
+						text='9 x 16'
+						image={theme === 'light' ? format8LightPng : format8Png}
+						onClick={() => send('resize_photo', { size: '9:16' })}
+						itemsCenter={true}
+						padding={0}
+						gap={15}
+					/>
+					<ImageButton
+						text='16 x 9'
+						image={theme === 'light' ? format9LightPng : format9Png}
+						onClick={() => send('resize_photo', { size: '16:9' })}
+						itemsCenter={true}
+						padding={0}
+						gap={15}
+					/>
 				</div>
 			</div>
 		</WrapperLayout>

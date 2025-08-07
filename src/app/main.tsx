@@ -20,6 +20,7 @@ import PrivacyPolicyPage from '../routes/help/privacy-policy';
 import LocalizationPage from '../routes/localization';
 import SelectClothesPage from '../routes/photo/personalization/select-clothes';
 import FiltersPage from '../routes/photo/filters';
+import LangProvider from '../providers/lang-provider';
 
 export const ROUTES = {
 	home: '/',
@@ -123,6 +124,8 @@ const router = createBrowserRouter(
 
 createRoot(document.getElementById('root')!).render(
 	<ThemeProvider>
-		<RouterProvider router={router} />
+		<LangProvider>
+			<RouterProvider router={router} />
+		</LangProvider>
 	</ThemeProvider>
 );

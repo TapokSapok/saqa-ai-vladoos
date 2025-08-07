@@ -1,108 +1,132 @@
 {
 	"home": {
-		"title": "XXX",
-		"desc1": "XXX",
-		"desc2": "XXX",
-		"desc3": "XXX",
-		"button": "XXX"
+		"title": "XXXXXXX",
+		"desc1": "XXXXXXX",
+		"desc2": "XXXXXXX",
+		"desc3": "XXXXXXX",
+		"button": "XXXXXXX"
 	},
-
 	"balance": {
-		"title": "XXX",
-		"desc1": "XXX",
-		"desc2": "XXX",
-		"masterpiece": "XXX",
+		"title": "XXXXXXX",
+		"desc1": "XXXXXXX",
+		"desc2": "XXXXXXX",
+		"masterpiece": "XXXXXXX",
 		"my_balance": {
-			"title": "XXX",
-			"desc1": "XXX",
-			"desc2": "XXX"
+			"title": "XXXXXXX",
+			"desc1": "XXXXXXX",
+			"desc2": "XXXXXXX"
 		},
-		"buy_button": "XXX"
+		"buy_button": "XXXXXXX"
 	},
-
 	"help": {
-		"title": "XXX",
-		"desc": "XXX",
-
-		"support": "XXX",
+		"title": "XXXXXXX",
+		"desc": "XXXXXXX",
+		"support": "XXXXXXX",
 		"manual": {
-			"title": "XXX",
-			"desc": "XXX"
+			"title": "XXXXXXX",
+			"desc": "XXXXXXX"
 		},
 		"privacy_policy": {
-			"title": "XXX",
-			"desc": "XXX"
+			"title": "XXXXXXX",
+			"desc": "XXXXXXX"
 		}
 	},
-
 	"localization": {
-		"title": "XXX",
-		"desc": "XXX"
+		"title": "XXXXXXX",
+		"desc": "XXXXXXX"
 	},
-
 	"profile": {
-		"title": "XXX",
-		"desc": "XXX",
-		"my_id": "XXX",
+		"title": "XXXXXXX",
+		"desc": "XXXXXXX",
+		"my_id": "XXXXXXX",
 		"registration": {
-			"title": "XXX",
-			"desc": "XXX"
+			"title": "XXXXXXX",
+			"desc": "XXXXXXX"
 		},
 		"change_theme": {
-			"to_light": "XXX",
-			"to_night": "XXX"
+			"to_light": "XXXXXXX",
+			"to_night": "XXXXXXX"
 		}
 	},
-
 	"photo": {
-		"title": "XXX",
-		"desc": "XXX",
-
+		"title": "XXXXXXX",
+		"desc": "XXXXXXX",
 		"btns": {
-			"create_character": "XXX",
-			"photo_upgrade": "XXX",
-			"personalization": "XXX",
-			"filters": "XXX",
-			"my_profile": "XXX",
-			"donate": "XXX",
-			"localization": "XXX",
-			"help": "XXX"
+			"create_character": "XXXXXXX",
+			"photo_upgrade": "XXXXXXX",
+			"personalization": "XXXXXXX",
+			"filters": "XXXXXXX",
+			"my_profile": "XXXXXXX",
+			"donate": "XXXXXXX",
+			"localization": "XXXXXXX",
+			"help": "XXXXXXX"
 		},
-
 		"upgrade": {
-			"title": "XXX",
-			"desc": "XXX",
-
+			"title": "XXXXXXX",
+			"desc": "XXXXXXX",
 			"btns": {
-				"improve": "XXX",
-				"increase": "XXX",
-				"delete": "XXX",
-				"change": "XXX",
-				"revive": "XXX"
+				"improve": "XXXXXXX",
+				"increase": "XXXXXXX",
+				"delete": "XXXXXXX",
+				"change": "XXXXXXX",
+				"revive": "XXXXXXX"
 			},
-
 			"improve": {
-				"title": "XXX",
-				"desc": "XXX"
+				"title": "XXXXXXX",
+				"desc": "XXXXXXX"
 			},
 			"change_object": {
-				"title": "XXX",
-				"desc": "XXX",
-				"placeholder": "XXX"
+				"title": "XXXXXXX",
+				"desc": "XXXXXXX",
+				"placeholder": "XXXXXXX"
 			},
 			"delete_object": {
-				"title": "XXX",
-				"desc": "XXX"
+				"title": "XXXXXXX",
+				"desc": "XXXXXXX"
 			},
 			"format": {
-				"title": "XXX",
-				"desc": "XXX"
+				"title": "XXXXXXX",
+				"desc": "XXXXXXX"
+			}
+		},
+		"personalization": {
+			"title": "XXXXXXX",
+			"desc": "XXXXXXX",
+			"btns": {
+				"clothes": "XXXXXXX",
+				"hats": "XXXXXXX",
+				"hairstyles": "XXXXXXX",
+				"shoes": "XXXXXXX",
+				"jewelry": "XXXXXXX",
+				"makeup": "XXXXXXX"
+			},
+			"select_clothes": {
+				"title": "XXXXXXX",
+				"desc": "XXXXXXX"
+			}
+		},
+		"filters": {
+			"title": "XXXXXXX",
+			"desc": "XXXXXXX"
+		},
+		"create_character": {
+			"title": "XXXXXXX",
+			"desc": "XXXXXXX",
+			"photo_count": "XXXXXXX",
+			"btns": {
+				"create": "XXXXXXX",
+				"change": "XXXXXXX"
 			}
 		}
 	},
-
 	"buttons": {
-		"generate": "XXX",
-		"select_photo": "XXX"
+		"generate": "XXXXXXX",
+		"select_photo": "XXXXXXX"
+	},
+	"switches": {
+		"gender": {
+			"girl": "XXXXXXX",
+			"man": "XXXXXXX"
+		}
 	}
 }

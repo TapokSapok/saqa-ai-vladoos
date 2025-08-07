@@ -19,7 +19,7 @@ export default function FiltersPage() {
 			</div>
 			<div className='mt-[20px] grid grid-cols-2 gap-[15px]'>
 				{filters[gender as keyof typeof filters].map((i, index) => (
-					<FilterCarousel key={index} title={i.title} images={i.data} desc={i.desc} />
+					<FilterCarousel key={index} title={i.title} images={i.data} desc={i.desc} filter={i.filter} />
 				))}
 			</div>
 		</WrapperLayout>

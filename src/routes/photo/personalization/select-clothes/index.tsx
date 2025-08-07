@@ -18,8 +18,8 @@ export default function SelectClothesPage() {
 				<Switch first={[t('switches.gender.girl'), 'girl']} second={[t('switches.gender.man'), 'man']} selectedValue={gender} setValue={setGender} padding={15} />
 			</div>
 			<div className='flex flex-col w-full gap-[20px]'>
-				{clothes[gender as keyof typeof clothes].map(i => (
-					<ClothesCarousel key={i.title} title={i.title} items={i.data} />
+				{clothes[gender as keyof typeof clothes].map((i, index) => (
+					<ClothesCarousel key={index} title={i.title} items={i.data} />
 				))}
 			</div>
 		</WrapperLayout>

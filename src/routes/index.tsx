@@ -10,7 +10,6 @@ import { useTranslation } from 'react-i18next';
 export default function HomePage() {
 	const navigate = useNavigate();
 	const { t } = useTranslation();
-
 	return (
 		<WrapperLayout>
 			<div className='flex justify-center h-[337px]'>

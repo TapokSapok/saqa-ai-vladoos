@@ -11,6 +11,7 @@ import upgrade3Png from '../../../assets/upgrade/upgrade3.png';
 import upgrade4Png from '../../../assets/upgrade/upgrade4.png';
 import upgrade5Png from '../../../assets/upgrade/upgrade5.png';
 import { useTranslation } from 'react-i18next';
+import { send } from '../../../telegram';
 
 export default function UpgradePage() {
 	const navigate = useNavigate();
@@ -28,7 +29,7 @@ export default function UpgradePage() {
 					<UpgradeButton text={t('photo.upgrade.btns.increase')} image={upgrade2Png} size='small' onClick={() => navigate(ROUTES.photo_format)} />
 					<UpgradeButton text={t('photo.upgrade.btns.delete')} image={upgrade3Png} size='big' onClick={() => navigate(ROUTES.photo_delete_object)} />
 					<UpgradeButton text={t('photo.upgrade.btns.change')} image={upgrade4Png} size='big' onClick={() => navigate(ROUTES.photo_change_object)} />
-					<UpgradeButton text={t('photo.upgrade.btns.revive')} image={upgrade5Png} size='big' onClick={() => {}} />
+					<UpgradeButton text={t('photo.upgrade.btns.revive')} image={upgrade5Png} size='big' onClick={() => send('enhance_photo')} />
 				</div>
 			</div>
 		</WrapperLayout>

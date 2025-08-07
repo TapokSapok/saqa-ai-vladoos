@@ -8,8 +8,8 @@ export default function Switch({
 	padding = 17,
 }: {
 	selectedValue: string;
-	first: [string, string];
-	second: [string, string];
+	first: [any, any];
+	second: [any, any];
 	setValue: (val: (typeof first)[1] | (typeof second)[1]) => void;
 	padding?: number;
 }) {

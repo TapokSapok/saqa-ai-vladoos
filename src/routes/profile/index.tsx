@@ -8,6 +8,7 @@ import datePng from '../../assets/date.png';
 import moonIconPng from '../../assets/icons/moon-stars-svgrepo-com.png';
 import sunIconPng from '../../assets/icons/sun.png';
 import { useTranslation } from 'react-i18next';
+import { send } from '../../telegram';
 
 export default function ProfilePage() {
 	const { theme, toggleTheme } = useTheme();
@@ -23,7 +24,10 @@ export default function ProfilePage() {
 			<Title titleText={t('profile.title')} secondText={t('profile.desc')} route={ROUTES.photo_home} />
 			<MyBalance />
 
-			<button className='relative rounded-[var(--rounded)] p-[23px] border-[1px] border-solid border-[var(--border-color)] w-full text-left overflow-hidden'>
+			<button
+				className='relative rounded-[var(--rounded)] p-[23px] border-[1px] border-solid border-[var(--border-color)] w-full text-left overflow-hidden'
+				onClick={() => send('balance')}
+			>
 				<h1 className='text-[18px]! flex items-center leading-[21px]'>{t('profile.registration.title')}</h1>
 				<h2 className='text-[13px] leading-[16px]'>{t('profile.registration.desc')}</h2>
 				<img className='absolute w-[132px] h-[125px] top-[0px] right-[0px]' src={datePng} />

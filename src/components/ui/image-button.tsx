@@ -19,7 +19,7 @@ export default function ImageButton({
 }) {
 	return (
 		<button
-			className={`flex flex-col items-center border-[1px] border-solid border-[var(--border-color)] rounded-[var(--rounded)]  min-h-[160px] h-[100%] ${
+			className={`hover:scale-[98%] hover:bg-[var(--bg-gray-1)] flex flex-col items-center border-[1px] border-solid border-[var(--border-color)] rounded-[var(--rounded)]  min-h-[160px] h-[100%] ${
 				itemsCenter ? 'justify-center' : ''
 			}`}
 			style={{

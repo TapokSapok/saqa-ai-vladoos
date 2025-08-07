@@ -2,8 +2,9 @@ import { useState } from 'react';
 
 import coinPng from '../assets/coin.png';
 import { useTranslation } from 'react-i18next';
+import { send } from '../telegram';
 
-export default function FilterCarousel({ title, images, desc }: { images: string[]; title: string; desc?: string }) {
+export default function FilterCarousel({ title, images, desc, filter }: { images: string[]; title: string; desc?: string; filter: string }) {
 	const [isHovered, setIsHovered] = useState(false);
 	const { t } = useTranslation();
 
@@ -35,6 +36,7 @@ export default function FilterCarousel({ title, images, desc }: { images: string
 					color: isHovered ? 'white' : 'black',
 					paddingRight: isHovered ? '25px' : undefined,
 				}}
+				onClick={() => send('generate_photo', { filter })}
 			>
 				{isHovered ? `${t('buttons.generate')} - 1` : title}
 				{isHovered && <img className='w-[18px] h-[18px]' src={coinPng} />}

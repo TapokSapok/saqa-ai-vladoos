@@ -6,6 +6,7 @@ import WrapperLayout from '../../../../layouts/wrapper-layout';
 
 import coinPng from '../../../../assets/coin.png';
 import { useTranslation } from 'react-i18next';
+import { send } from '../../../../telegram';
 
 export default function ImprovePhotoPage() {
 	const { t } = useTranslation();
@@ -18,7 +19,7 @@ export default function ImprovePhotoPage() {
 			<div>
 				<Title titleText={t('photo.upgrade.improve.title')} secondText={t('photo.upgrade.improve.desc')} route={ROUTES.photo_upgrade} />
 				<div className='mt-[45px]'>
-					<GreenButton onClick={() => {}} text={`${t('buttons.generate')} - 2`} imgPos='right' image={coinPng} fontSize={16} />
+					<GreenButton onClick={() => send('enhance_photo')} text={`${t('buttons.generate')} - 2`} imgPos='right' image={coinPng} fontSize={16} />
 				</div>
 			</div>
 		</WrapperLayout>
