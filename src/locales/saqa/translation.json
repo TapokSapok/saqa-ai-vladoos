@@ -1,0 +1,108 @@
+{
+	"home": {
+		"title": "XXX",
+		"desc1": "XXX",
+		"desc2": "XXX",
+		"desc3": "XXX",
+		"button": "XXX"
+	},
+
+	"balance": {
+		"title": "XXX",
+		"desc1": "XXX",
+		"desc2": "XXX",
+		"masterpiece": "XXX",
+		"my_balance": {
+			"title": "XXX",
+			"desc1": "XXX",
+			"desc2": "XXX"
+		},
+		"buy_button": "XXX"
+	},
+
+	"help": {
+		"title": "XXX",
+		"desc": "XXX",
+
+		"support": "XXX",
+		"manual": {
+			"title": "XXX",
+			"desc": "XXX"
+		},
+		"privacy_policy": {
+			"title": "XXX",
+			"desc": "XXX"
+		}
+	},
+
+	"localization": {
+		"title": "XXX",
+		"desc": "XXX"
+	},
+
+	"profile": {
+		"title": "XXX",
+		"desc": "XXX",
+		"my_id": "XXX",
+		"registration": {
+			"title": "XXX",
+			"desc": "XXX"
+		},
+		"change_theme": {
+			"to_light": "XXX",
+			"to_night": "XXX"
+		}
+	},
+
+	"photo": {
+		"title": "XXX",
+		"desc": "XXX",
+
+		"btns": {
+			"create_character": "XXX",
+			"photo_upgrade": "XXX",
+			"personalization": "XXX",
+			"filters": "XXX",
+			"my_profile": "XXX",
+			"donate": "XXX",
+			"localization": "XXX",
+			"help": "XXX"
+		},
+
+		"upgrade": {
+			"title": "XXX",
+			"desc": "XXX",
+
+			"btns": {
+				"improve": "XXX",
+				"increase": "XXX",
+				"delete": "XXX",
+				"change": "XXX",
+				"revive": "XXX"
+			},
+
+			"improve": {
+				"title": "XXX",
+				"desc": "XXX"
+			},
+			"change_object": {
+				"title": "XXX",
+				"desc": "XXX",
+				"placeholder": "XXX"
+			},
+			"delete_object": {
+				"title": "XXX",
+				"desc": "XXX"
+			},
+			"format": {
+				"title": "XXX",
+				"desc": "XXX"
+			}
+		}
+	},
+
+	"buttons": {
+		"generate": "XXX",
+		"select_photo": "XXX"
+	}
+}

@@ -1,3 +1,3 @@
 export default function AdsBanner() {
-	return <div className='bg-[#F3F5F6] w-[360px] h-[110px] rounded-[var(--rounded)]'></div>;
+	return <div className='bg-[var(--bg-gray-1)] w-[360px] h-[110px] rounded-[var(--rounded)]'></div>;
 }

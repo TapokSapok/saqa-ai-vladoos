@@ -24,17 +24,19 @@ import format6Png from '../../../../assets/format/format6.png';
 import format7Png from '../../../../assets/format/format7.png';
 import format8Png from '../../../../assets/format/format8.png';
 import format9Png from '../../../../assets/format/format9.png';
+import { useTranslation } from 'react-i18next';
 
 export default function FormatPage() {
 	const { theme } = useTheme();
+	const { t } = useTranslation();
 
 	return (
 		<WrapperLayout>
 			<div className='mb-[20px]'>
 				<AdsBanner />
 			</div>
-			<div>
-				<Title titleText='Фото мастерская' secondText='Редактируйте фото за секунды — легко и удобно!' route={ROUTES.photo_upgrade} />
+			<div className='w-[98%]'>
+				<Title titleText={t('photo.upgrade.format.title')} secondText={t('photo.upgrade.format.desc')} route={ROUTES.photo_upgrade} />
 				<div className='grid grid-cols-2 gap-[10px] pt-[30px] ml-[5px]'>
 					<ImageButton text='1 x 1' image={theme === 'light' ? format1LightPng : format1Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />
 					<ImageButton text='2 x 3' image={theme === 'light' ? format2LightPng : format2Png} onClick={() => {}} itemsCenter={true} padding={0} gap={15} />

@@ -4,9 +4,11 @@ import AdsBanner from '../../components/ads-banner';
 import BigButton from '../../components/ui/big-button';
 import WrapperLayout from '../../layouts/wrapper-layout';
 import Title from '../../components/title';
+import { useTranslation } from 'react-i18next';
 
 export default function PhotoHomePage() {
 	const navigate = useNavigate();
+	const { t } = useTranslation();
 
 	return (
 		<WrapperLayout>
@@ -14,16 +16,16 @@ export default function PhotoHomePage() {
 				<AdsBanner />
 			</div>
 			<div>
-				<Title titleText='Центр управления фото' secondText='Все инструменты для твоих фото — в одном месте.' route={ROUTES.home} />
+				<Title titleText={t('photo.title')} secondText={t('photo.desc')} route={ROUTES.home} />
 				<div className='grid grid-cols-2 gap-[10px] mt-[30px]'>
-					<BigButton text='Создать персонажа' onClick={() => navigate(ROUTES.photo_create_character)} />
-					<BigButton text='Фото-мастерская' onClick={() => navigate(ROUTES.photo_upgrade)} />
-					<BigButton text='Гардероб' onClick={() => navigate(ROUTES.photo_personalization)} />
-					<BigButton text='Фильтры' onClick={() => navigate(ROUTES.photo_create_character)} />
-					<BigButton text='Мой профиль' onClick={() => navigate(ROUTES.profile)} />
-					<BigButton text='Купить генерации' onClick={() => navigate(ROUTES.balance)} />
-					<BigButton text='Язык интерфейса' onClick={() => navigate(ROUTES.photo_create_character)} />
-					<BigButton text='Помощь' onClick={() => navigate(ROUTES.help)} />
+					<BigButton text={t('photo.btns.create_character')} onClick={() => navigate(ROUTES.photo_create_character)} />
+					<BigButton text={t('photo.btns.photo_upgrade')} onClick={() => navigate(ROUTES.photo_upgrade)} />
+					<BigButton text={t('photo.btns.personalization')} onClick={() => navigate(ROUTES.photo_personalization)} />
+					<BigButton text={t('photo.btns.filters')} onClick={() => navigate(ROUTES.photo_filters)} />
+					<BigButton text={t('photo.btns.my_profile')} onClick={() => navigate(ROUTES.profile)} />
+					<BigButton text={t('photo.btns.donate')} onClick={() => navigate(ROUTES.balance)} />
+					<BigButton text={t('photo.btns.localization')} onClick={() => navigate(ROUTES.localization)} />
+					<BigButton text={t('photo.btns.help')} onClick={() => navigate(ROUTES.help)} />
 				</div>
 			</div>
 		</WrapperLayout>

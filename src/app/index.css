@@ -33,6 +33,9 @@
 	--text-muted: #728a96;
 	--text-inverted: #ffffff;
 	--border-color: #7698bb26;
+
+	--bg-gray-1: #f3f5f6; /* back button */
+	--bg-gray-2: white;
 }
 
 :root.dark {
@@ -42,7 +45,10 @@
 	--text: #ffffff;
 	--text-muted: #728a96;
 	--text-inverted: #1b2128;
-	--border-color: #7698bb26;
+	--border-color: #1b212880;
+
+	--bg-gray-1: #0f1317;
+	--bg-gray-2: #1e252c;
 }
 
 h1 {

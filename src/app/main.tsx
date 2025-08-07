@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import './index.css';
+import '../i18n';
 import ThemeProvider from '../providers/theme-provider';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import HomePage from '../routes';
@@ -16,6 +17,9 @@ import BalancePage from '../routes/balance';
 import HelpPage from '../routes/help';
 import ManualPage from '../routes/help/manual';
 import PrivacyPolicyPage from '../routes/help/privacy-policy';
+import LocalizationPage from '../routes/localization';
+import SelectClothesPage from '../routes/photo/personalization/select-clothes';
+import FiltersPage from '../routes/photo/filters';
 
 export const ROUTES = {
 	home: '/',
@@ -24,18 +28,23 @@ export const ROUTES = {
 	photo_create_character: '/photo/create_character',
 	profile: '/profile',
 	balance: '/balance',
+	localization: '/localization',
 
 	help: '/help',
 	manual: '/help/manual',
 	privacy_policy: '/help/privacy_policy',
 	support_tg: 'https://t.me/saqa_ai',
 
-	photo_personalization: '/photo/personalization',
 	photo_upgrade: '/photo/upgrade',
 	photo_format: '/photo/upgrade/format',
 	photo_improve: '/photo/upgrade/improve',
 	photo_delete_object: '/photo/upgrade/delete_object',
 	photo_change_object: '/photo/upgrade/change_object',
+
+	photo_personalization: '/photo/personalization',
+	photo_select_clothes: '/photo/personalization/select-clothes',
+
+	photo_filters: '/photo/filters',
 };
 
 const router = createBrowserRouter(
@@ -95,6 +104,18 @@ const router = createBrowserRouter(
 		{
 			path: ROUTES.privacy_policy,
 			element: <PrivacyPolicyPage />,
+		},
+		{
+			path: ROUTES.localization,
+			element: <LocalizationPage />,
+		},
+		{
+			path: ROUTES.photo_select_clothes,
+			element: <SelectClothesPage />,
+		},
+		{
+			path: ROUTES.photo_filters,
+			element: <FiltersPage />,
 		},
 	],
 	{ future: { v7_fetcherPersist: true, v7_normalizeFormMethod: true, v7_partialHydration: true, v7_relativeSplatPath: true, v7_skipActionErrorRevalidation: true } }
