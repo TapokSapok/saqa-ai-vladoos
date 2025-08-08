@@ -32,7 +32,7 @@ export default function Switch({
 	}
 
 	return (
-		<div className='relative w-[360px] rounded-[var(--rounded)] overflow-hidden border-[1px] border-solid border-[var(--border-color)] flex'>
+		<div className='relative w-[360px] rounded-[var(--rounded)] overflow-hidden bg-[var(--bg-gray-1)] border-[1px] border-solid border-[var(--border-color)] flex'>
 			<button
 				className='z-[1] leading-[21px] w-full relative text-[14px] font-[500] text-[var(--text-muted)]'
 				onClick={() => setValue(first[1])}
