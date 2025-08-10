@@ -19,7 +19,7 @@ export default function GreenButton({
 }) {
 	return (
 		<button
-			className='flex py-[16px] justify-center hover:bg-[var(--brand-color-muted)] w-[360px] h-[52px] rounded-[var(--rounded)] transition-all hover:transform hover:translate-y-[-5%] gap-[10px] text-[14px] leading-1 items-center disabled:opacity-50 disabled:pointer-events-none'
+			className='flex active:translate-y-[-10%] py-[16px] justify-center hover:bg-[var(--brand-color-muted)] w-[360px] h-[52px] rounded-[var(--rounded)] transition-all hover:translate-y-[-5%] gap-[10px] text-[14px] leading-1 items-center disabled:opacity-50 disabled:pointer-events-none'
 			onClick={onClick}
 			disabled={disabled}
 			style={{

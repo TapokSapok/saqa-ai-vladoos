@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function FiltersPage() {
 	const [gender, setGender] = useState('girl');
-	const { t } = useTranslation();
+	const { t, i18n } = useTranslation();
 
 	return (
 		<WrapperLayout>
@@ -19,7 +19,7 @@ export default function FiltersPage() {
 			</div>
 			<div className='mt-[20px] grid grid-cols-2 gap-[15px]'>
 				{filters[gender as keyof typeof filters].map((i, index) => (
-					<FilterCarousel key={index} title={i.title} images={i.data} desc={i.desc} filter={i.filter} />
+					<FilterCarousel key={index} title={i.info[i18n.language as 'ru' | 'saqa'].title} images={i.data} desc={i.info[i18n.language as 'ru' | 'saqa'].desc} filter={i.filter} />
 				))}
 			</div>
 		</WrapperLayout>

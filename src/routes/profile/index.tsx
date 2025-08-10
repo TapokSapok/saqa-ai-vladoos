@@ -25,7 +25,7 @@ export default function ProfilePage() {
 			<MyBalance />
 
 			<button
-				className='relative rounded-[var(--rounded)] p-[23px] border-[1px] border-solid border-[var(--border-color)] w-full text-left overflow-hidden'
+				className='relative hover:scale-[97%] rounded-[var(--rounded)] p-[23px] border-[1px] border-solid border-[var(--border-color)] w-full text-left overflow-hidden'
 				onClick={() => send('balance')}
 			>
 				<h1 className='text-[18px]! flex items-center leading-[21px]'>{t('profile.registration.title')}</h1>

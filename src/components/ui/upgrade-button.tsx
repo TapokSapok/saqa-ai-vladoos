@@ -6,7 +6,7 @@ export default function UpgradeButton({ text, image, onClick, size }: { text: st
 
 	return (
 		<button
-			className='hover:scale-[98%] hover:bg-[var(--bg-gray-1)] flex flex-col justify-center items-center border-[1px] border-solid border-[var(--border-color)] rounded-[var(--rounded)] py-[35px] h-[219px]'
+			className='hover:scale-[98%] hover:bg-[var(--bg-gray-1)] flex flex-col justify-center items-center border-[1px] border-solid border-[var(--border-color)] rounded-[var(--rounded)] py-[35px] h-[219px] active:translate-y-[-4px]'
 			onClick={onClick}
 		>
 			<div className='w-[130px] h-[130px] flex items-center justify-center'>
